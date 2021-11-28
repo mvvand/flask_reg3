@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<form action="" method="post">
+    <p>
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name">
+    </p>
+    <p>
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login">
+    </p>
+    <p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+    </p>
+
+    {%if error%}
+    <p>
+        {{error}}
+    </p>
+    {%endif%}
+
+
+    <p>
+        <input type="submit" value="Sign In">
+    </p>
+</form>
+
+</body>
+</html>
